@@ -1,27 +1,40 @@
-# CanvasOS architecture documentation
+# CanvasOS documentation
 
-A first architecture walkthrough for David and Jesse. Reader-facing pages explain the intended platform in ordinary language, with examples and diagrams. This is a draft for human review, not a statement that the described product exists.
+Architecture and system design for CanvasOS: a platform where agents prepare useful tools and workspaces around the work people need to do.
 
-## Read locally
+**[Read the documentation →](https://intentionality-software.mintlify.app)**
+
+## What's inside
+
+- **System map:** the major parts of CanvasOS and how they connect.
+- **Discovery and preparation:** how requests and observations become useful workspaces.
+- **Applications and agents:** how tools are built, connected and used across interfaces.
+- **Knowledge and learning:** how context, feedback and simulation improve future work.
+- **Operating foundations:** identity, access, customer installations and platform management.
+- **Delivery and open choices:** the intended sequence and decisions still to resolve.
+
+Start with the system map, then follow discovery and preparation into building and using a tool. The remaining chapters explain the supporting systems.
+
+## Local development
+
+This site uses [Mintlify](https://www.mintlify.com). Pages are written in MDX, with navigation and site settings in `docs.json`.
 
 1. Run `mint dev --no-open` from this directory.
 2. Open the local URL printed by the CLI.
-3. Start with **Understand CanvasOS**.
 
-## Edit and check
+## Contributing
 
-Read `AGENTS.md` before editing. Use `mint instructions write` for current Mintlify guidance. Navigation is in `docs.json`.
+Read [AGENTS.md](AGENTS.md) for writing guidance. Keep pages understandable on their own, define necessary terms, and use examples and diagrams to explain relationships.
 
-Run `mint validate` and `mint broken-links` after edits. Inspect the rendered pages and diagrams.
+Run these checks after changing documentation:
 
-`CANON-SOURCES.md` maps the reader-facing pages to the preserved planning library. Maintainer files and the original starter quickstart are excluded from the documentation build by `.mintignore`.
+```bash
+mint validate
+mint broken-links --check-anchors
+```
 
-## Publication
+[CANON-SOURCES.md](CANON-SOURCES.md) maps the chapters to supporting design material. Maintainer files are excluded from the site through `.mintignore`.
 
-The Git remote is `https://github.com/canvasos/docs`. Pushing a connected production branch can publish changes. This local editorial pass does not push or deploy. Reader access and publishing settings must be verified separately before hosted review.
+## Publishing
 
-## First-edition review
-
-The first reading path has nine pages and nine diagrams. Two scoped writers prepared the topic pages. An independent reviewer checked standalone readability, architectural coherence and visual explanations. Four material findings were corrected: workspace meaning, the handoff to connected records/actions, data freshness and unresolved outcomes. The shorter initial reading path and the shared delivery example were also clarified.
-
-Final checks passed: Mintlify build/validation, broken links including section anchors, and Git whitespace checks. Browser review loaded all nine routes, checked diagrams, and found no page errors or desktop horizontal overflow. The discovery page was also inspected at a 390-pixel mobile width. Hosted login, access configuration and publication were not performed.
+Changes pushed to the connected deployment branch are built and published by Mintlify. Review the deployment result before treating a change as live.
