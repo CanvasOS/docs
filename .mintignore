@@ -5,3 +5,8 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Canon maintenance and preserved starter pages
+AGENTS.md
+CANON-SOURCES.md
+quickstart.mdx

@@ -1,55 +1,27 @@
-# Mintlify Starter Kit
+# CanvasOS architecture documentation
 
-Use the starter kit to get your docs deployed and ready to customize.
+A first architecture walkthrough for David and Jesse. Reader-facing pages explain the intended platform in ordinary language, with examples and diagrams. This is a draft for human review, not a statement that the described product exists.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## Read locally
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+1. Run `mint dev --no-open` from this directory.
+2. Open the local URL printed by the CLI.
+3. Start with **Understand CanvasOS**.
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+## Edit and check
 
-## AI-assisted writing
+Read `AGENTS.md` before editing. Use `mint instructions write` for current Mintlify guidance. Navigation is in `docs.json`.
 
-Set up your AI coding tool to work with Mintlify:
+Run `mint validate` and `mint broken-links` after edits. Inspect the rendered pages and diagrams.
 
-```bash
-npx skills add https://mintlify.com/docs
-```
+`CANON-SOURCES.md` maps the reader-facing pages to the preserved planning library. Maintainer files and the original starter quickstart are excluded from the documentation build by `.mintignore`.
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+## Publication
 
-See the guides for [Claude Code](https://www.mintlify.com/docs/guides/claude-code), [Codex](https://www.mintlify.com/docs/guides/codex), [Cursor](https://www.mintlify.com/docs/guides/cursor), and [Devin Desktop](https://www.mintlify.com/docs/guides/devin-desktop) for tool-specific setup.
+The Git remote is `https://github.com/canvasos/docs`. Pushing a connected production branch can publish changes. This local editorial pass does not push or deploy. Reader access and publishing settings must be verified separately before hosted review.
 
-## Development
+## First-edition review
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+The first reading path has nine pages and nine diagrams. Two scoped writers prepared the topic pages. An independent reviewer checked standalone readability, architectural coherence and visual explanations. Four material findings were corrected: workspace meaning, the handoff to connected records/actions, data freshness and unresolved outcomes. The shorter initial reading path and the shared delivery example were also clarified.
 
-```
-npm i -g mint
-```
-
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
-mint dev
-```
-
-View your local preview at `http://localhost:3000`.
-
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+Final checks passed: Mintlify build/validation, broken links including section anchors, and Git whitespace checks. Browser review loaded all nine routes, checked diagrams, and found no page errors or desktop horizontal overflow. The discovery page was also inspected at a 390-pixel mobile width. Hosted login, access configuration and publication were not performed.
