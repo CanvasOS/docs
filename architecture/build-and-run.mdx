@@ -35,6 +35,16 @@ The view also needs to explain the age of its information:
 
 One workspace can combine these forms. A saved comparison might preserve yesterday's figures beside a live delivery status. Source and freshness should be visible where that difference affects the decision. Saving a workspace layout does not automatically freeze the external records it displays.
 
+## Compose views into a working environment
+
+A composition connects useful views, inputs and actions around the job. Selecting a delivery in a table could supply the subject for an evidence viewer and comparison control. An agent can establish those relationships and explain which records an action affects. A selection, a request to read evidence and a command to correct a record remain different operations, each with its applicable authority. The representation of these relationships remains open; they should not survive only in the agent's conversation.
+
+Canvas should support free placement, drawing, pasted images and references alongside structured panels. A team could arrange records for a repeated review while keeping visual notes nearby. Moving a panel changes its presentation; visual proximity alone does not connect its data or authorize an action. Once a relationship is established, supported filters, selections and known actions can run through ordinary software without fresh model reasoning.
+
+Shared work also contains several kinds of state. The shared arrangement and accepted application changes differ from each person's focus, selection and presence. Draft input needs an explicit saving and sharing arrangement. A visible pointer cannot prove that its owner saved a change or still has permission. If one person submits a correction, collaboration should distribute its supported result without making every viewer submit the same external command. Lost acknowledgement requires inspection before repetition.
+
+A host supplies focus, navigation, component communication and supported collaboration around the application. A focused route may need an alternative to a canvas-only control, or explain the limitation. Hosts need not offer identical capabilities. Their design must account for keyboard use, input inside components and canvas navigation without confusing those interactions.
+
 ## Keep implementation and operation distinct
 
 ```mermaid
@@ -60,13 +70,23 @@ These distinctions need not become separate services. They prevent evidence abou
 
 Studio should help an author move through assumptions, consequential questions, construction, review and refinement. A supplied brief can start this work without a continuous event feed. Internal builders come first; supported MCP and command-line tooling can submit external material for assessment. Submission does not make code executable or published.
 
+Intent and implementation can change for different reasons. Prototype feedback may reveal that the author wants a narrower comparison; that is a recorded change to the job. Code that fails a valid requirement needs repair. A builder cannot silently remove the requirement and claim the original job passed. Specifications and configuration guide construction, while the relationship between current intent, exact code and assessment remains inspectable.
+
 Useful checks follow the intended behavior. For the comparison tool, that includes source meanings, calculations and relevant interactions. A clean build establishes less than a correct comparison. Synthetic records can support a preview, but cannot establish that a real connection works or that an unconnected source contains needed information.
 
+Assessment must be able to challenge the builder's account. Application owners supply job-specific criteria; platform owners retain the applicable integration and access requirements. Intent preservation, technical quality and usefulness need separate evidence. Deterministic checks, interaction review and domain judgment can each contribute within their limits. Independent assessment does not require a second model for every edit.
+
+A synthetic rehearsal, a view-only trial and limited live use answer different questions. Choose the trial and authority appropriate to the job. Useful low-impact drafts can receive feedback before full polish, while broken behavior and actions dependent on it remain unavailable.
+
 Repository access, editing, building, previewing, reading data, publishing and changing external records are different permissions. Each action uses its applicable authority. Passing an assessment does not grant publication rights, and publishing a view does not authorize corrections in another system. [Systems and agents](/architecture/systems-and-agents) explains those operating relationships.
+
+Generated code and build tools need bounded capabilities, as do the browser, server and host interfaces through which a candidate runs. Assess the actual exposed network, storage, credentials and communication paths. A preview label or hidden control cannot establish isolation. The execution and isolation mechanisms remain open; their supported boundaries need qualification through the paths the candidate can actually use.
 
 ## Operate and change deliberately
 
 An ordinary data update is not a new application release. Changing calculation code or view behavior is a versioned upgrade. Updates should account for current data, customer customization and work already underway. Publication and successful placement in a host are also distinct: a placement failure should not cause duplicate application creation.
+
+Application code, host capabilities, templates and saved data can evolve separately. A new template should not silently rearrange a customer's deliberate layout or overwrite local behavior. Assess the affected combination, preserve supported drafts and active work, and explain any required transition. Returning to earlier code does not necessarily reverse data changes or external effects. Closing a view, removing an installed application and deleting its resources also require different scopes.
 
 If the comparison calculation fails, block that component and actions materially dependent on it. An independent evidence viewer can remain available if its behavior is sound. A polished screen must not make the failed calculation appear usable.
 

@@ -32,6 +32,13 @@
           "architecture/operating-and-evolving",
           "architecture/delivery-and-choices"
         ]
+      },
+      {
+        "group": "Deeper explanations",
+        "pages": [
+          "architecture/shared-data-and-guidance",
+          "architecture/recovery-and-platform-changes"
+        ]
       }
     ]
   }

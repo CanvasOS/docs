@@ -35,6 +35,8 @@ mint broken-links --check-anchors
 
 [CANON-SOURCES.md](CANON-SOURCES.md) maps the chapters to supporting design material. Maintainer files are excluded from the site through `.mintignore`.
 
+[CANON-COVERAGE.md](CANON-COVERAGE.md) records the coverage review of all 56 planning sources and the ideas restored during consolidation.
+
 ## Publishing
 
 Changes pushed to the connected deployment branch are built and published by Mintlify. Review the deployment result before treating a change as live.
